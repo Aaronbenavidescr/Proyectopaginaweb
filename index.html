@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!-- Configuracion de pestaña página -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hogwarts</title>
+    <link rel="stylesheet" href="estilos/main.css">
+    <link rel="icon" href="imagenes/h4.png" type="image/x-icon">
+</head>
+
+<body>
+<!-- Cancion/logo/titulo/hamburger -->
+    <audio id="background-music" src="canciones/canciones_Prologue.mp3" preload="auto"></audio>
+
+    <header class="header-panel">
+        <div class="logo">
+            <img src="imagenes/logo-hogwarts.png" alt="Ejemplo" id="miImagen">
+        </div>
+        <div class="titulo">
+            ¿Te ha llegado la carta del búho?
+        </div>
+        <div class="menu-icon" id="menuIcon">
+            <img src="imagenes/icono_hamburguesa.webp" alt="Menú">
+        </div>
+    </header>
+
+<!-- Configuración de menu -->
+    <nav id="menuDesplegable" class="menu-desplegable">
+        <div class="menu-header"> 
+            <div class="menu-title">
+                Hogwarts la universidad<br>más segura
+            </div>
+            <img src="imagenes/icono-equis.webp" alt="Cerrar" id="closeMenu">
+        </div>
+        <ul>
+            <li><a href="#" id="inicio">Inicio</a></li>
+            <li><a href="#" id="saberMiCasa">Saber mi casa</a></li>
+            <li><a href="#" id="requisitosMatricula">Requisitos de matrícula</a></li>
+            <li><a href="#" id="acercade">Acerca de</a></li>
+            <li><a href="#" id="contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+<!-- Configuración de video -->
+    <div class="contenedor-video">
+        <video autoplay loop muted playsinline>
+            <source src="videos/vh1.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+    </div>
+
+    <!-- Configuración de cards -->
+    <div class="card-container">
+        <div class="card">
+            <img src="imagenes/Gryffindor.png" alt="Gryffindor">
+            <h3>GRYFFINDOR</h3>
+            <p>Los estudiantes de Gryffindor son conocidos por su valentía y coraje.</p>
+            <button class="ver-mas" data-house="gryffindor">Ver más</button>
+            <div class="card-info" id="info-gryffindor">
+                <p>Aquí tienes más información sobre Gryffindor...</p>
+                Somos los atrevidos, los audaces y los más valientes leones. Nunca nos rendiremos, somos los más osados y vamos de frente ante cualquier cosa con valentía. 
+
+                Indicamos el camino donde el bien habita,para un mundo más justo como un león. Nosotros seguimos sus pasos como sus hijos, siempre por el camino de la justicia.
+            </div>
+        </div>
+        <div class="card">
+            <img src="imagenes/hufflepuff.png" alt="Hufflepuff">
+            <h3>HUFFLEPUFF</h3>
+            <p>Hufflepuff valora la lealtad, la paciencia y el trabajo duro.</p>
+            <button class="ver-mas" data-house="hufflepuff">Ver más</button>
+            <div class="card-info" id="info-hufflepuff">
+                <p>Aquí tienes más información sobre hufflepuff...</p>
+                Hufflepuff suele ser tomada como el lugar para los estudiantes que no tienen ninguna de las cualidades de las otras tres, las cuales tienen atributos más definidos. 
+                
+                Quizá debido a los criterios sobre la que fue fundada, Hufflepuff adquirió el estereotipo de ser corriente.
+            </div>
+        </div>
+        <div class="card">
+            <img src="imagenes/Ravenclaw.png" alt="Ravenclaw">
+            <h3>RAVENCLAW</h3>
+            <p>Los estudiantes de Ravenclaw son inteligentes y buscan el conocimiento.</p>
+            <button class="ver-mas" data-house="ravenclaw">Ver más</button>
+            <div class="card-info" id="info-ravenclaw">
+                <p>Aquí tienes más información sobre Ravenclaw...</p>
+                La casa Ravenclaw premia el aprendizaje, la sabiduría, el ingenio, y el intelecto de sus miembros.Por ello, muchos Ravenclaw tienden a tener talento académico y a ser estudiantes motivados. 
+                Los Ravenclaw también se enorgullecen de ser originales en sus ideas y métodos. 
+                No es raro encontrar a estudiantes de Ravenclaw que practiquen diferentes tipos de magia que otras casas podrían tratar de evitar.
+            </div>
+        </div>
+        <div class="card">
+            <img src="imagenes/Slytherin.png" alt="Slytherin">
+            <h3>SLYTHERIN</h3>
+            <p>Slytherin es conocido por la ambición y la astucia.</p>
+            <button class="ver-mas" data-house="slytherin">Ver más</button>
+            <div class="card-info" id="info-slytherin">
+                <p>Aquí tienes más información sobre Slytherin...</p>
+                Los Slytherin tienden a ser líderes ambiciosos, astutos y fuertes, orientados a los logros. También tienen sentidos altamente desarrollados de autopreservación.
+                 Esto significa que los Slytherin tienden a dudar antes de actuar, a fin de sopesar todos los resultados posibles antes de decidir exactamente qué se debe hacer.
+            </div>
+        </div>
+    </div>
+    
+    <!-- Configuración de wraps -->
+    <div class="informativos">
+        <div class="informativo" id="info1">
+            <img src="imagenes/librohogwarts.jpg" alt="Mitos 1">
+            <h3>Libro de historia de Hogwarts</h3>
+            <p>En 1997, Hermione consideró el libro de la historia de Hogwarts mientras ordenaba los objetos que necesitaría para su misión de hallar los horrocruxes. 
+                Fue uno de los libros que decidió llevar con ella, comentando que ella se "sentiría muy rara" si no lo hacía.</p>
+        </div>
+        <div class="informativo" id="info2">
+            <img src="imagenes/Hogwartsfundacion.jpg" alt="Mitos 2">
+            <h3>Fundacion de Hogwarts</h3>
+            <p>Se desconoce la fecha exacta en la que se construyó el castillo. 
+                Podemos inferir que Hogwarts se fundó en algún momento a fines del siglo X, porque hay múltiples referencias en los libros a que la escuela tiene más de 1,000 años. </p>
+        </div>
+        <div class="informativo" id="info3">
+            <a href=https://www.wizardingworld.com/es/sorting-hat target="_blank">
+                <img src="imagenes/wizardinworld.jpg" alt="Mitos 3">
+                <h3>¿Cuál es tu casa?</h3>
+                <p>Haz click para que puedas viajar a Hogwarts y saber cual es tu casa. Mientras no seas un Muggle</p>
+            </a>
+        </div>
+    </div>
+
+    <!-- Configuración de accordion -->
+<div class="accordion">
+    <div id="toggleRequisitosFooter" class="accordion-header">Requisitos de Matrícula</div>
+    <div id="contentRequisitosFooter" class="accordion-content">
+        <div id="tituloRequisitosFooter">
+            <h3>Lee con atención todos los puntos</h3>
+        </div>
+        <img src="imagenes/requisitos.png" alt="Requisitos" id="imagenMatriculaFooter">
+    </div>
+    <div id="toggleAcercaFooter" class="accordion-header">Acerca de</div>
+    <div id="contentAcercaFooter" class="accordion-content">
+        <div id="tituloAcercaFooter">
+            <h2>Información importante</h2>
+        </div>
+        <img src="imagenes/acerca.png" alt="Acerca de" id="imagenAcercaFooter">
+    </div>
+</div>
+
+<!-- Configuración de footer -->
+<script src="scripts/main.js"></script>
+
+    <footer id="footerContacto" class="footer">
+        <h2>HOGWARTS ESCUELA DE MAGIA</h2>
+        <p>Dirección: Bosque Prohibido, Escocia</p>
+        <p>Teléfono: +44 20 7946 0957</p>
+    </footer>
+</body>
+</html>
